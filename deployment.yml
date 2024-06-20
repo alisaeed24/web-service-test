@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: web-app-deployment
+  namespace: test
+spec:
+  replicas: 5
+  selector:
+    matchLabels:
+      app: web-app
+  strategy:
+    type: Recreate
+  template:
+    metadata:
+      labels:
+        app: web-app
+    spec:
+      containers:
+        - name: test
+          image: alisaeed23369/test-app:latest
+          ports:
+            - containerPort: 8081
