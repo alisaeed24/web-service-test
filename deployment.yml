@@ -17,6 +17,6 @@ spec:
     spec:
       containers:
         - name: test
-          image: alisaeed23369/test-app:latest
+          image: localhost:5000/web-test
           ports:
             - containerPort: 8081
