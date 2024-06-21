@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: test
-          image: localhost:5000/web-test
+          image: docker-registry:5000/web-test
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 8081
