@@ -11,4 +11,4 @@ spec:
     port: 9090
     targetPort: 8081
     nodePort: 30006
-  type: LoadBalancer
+  type: NodePort
